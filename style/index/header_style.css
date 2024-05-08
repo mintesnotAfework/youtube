@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 56px;
+    /* overflow: hidden; */
+    padding:16px;
+}
+
+header .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .header .site_name_nav{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+
+header .header .site_name_nav .navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.5rem 0 0.3rem;
+}
+
+header .header .site_name_nav .navigation:hover{
+    border-radius: 50%;
+    padding: .4rem;
+    margin: 0;
+    background-color: rgba(84, 84, 84, 0.364);
+}
+
+header .header .site_name_nav .site_name{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+header .header .main-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header .header .main-search .search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .header .main-search .search form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .header .main-search .search form input[type="text"]{
+    border: 1px groove gray;
+    border-radius: 25px 0 0 25px;
+    width: 35rem;
+    height: 3rem;
+    padding-left: 15px;
+    font-size: inherit;
+}
+
+header .header .main-search .search form > i{
+    visibility: hidden;
+}
+
+/* header .header .main-search .search form input[type="text"]:focus::before{
+    visibility: visible;
+    background-color: black;
+    width: 3rem;
+    height: 3rem;
+    padding-left: 15px;
+    font-size: inherit;
+} */
+
+header .header .main-search .search form button{
+    border: 1px groove gray;
+    border-radius: 0 25px 25px 0;
+    width: 4rem;
+    height: 3rem;
+}
+header .header .main-search .search form button:hover{
+    background-color: rgba(19, 19, 19, 0.364);
+}
+
+header .header .main-search .record{
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    border: 1px groove grey;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    border-radius: 50%;
+}
+header .header .main-search .record:hover{
+    background-color: rgba(55, 55, 55, 0.218);
+}
+header .header .main-search .record .record_drop_down{
+    display: none;
+}
+
+header .header .right_side nav .main-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .header .right_side nav .main-list a{
+    text-decoration: none;
+    color: black;
+}
+header .header .right_side nav .main-list li{
+
+    list-style: none;
+}
+
+header .header .right_side nav .main-list > li .main-icon{
+    padding: 1rem;
+    margin: 0 1rem;
+    border: 1px groove grey;
+    border-radius: 50%;
+}
+
+header .header .right_side nav .main-list > li .main-icon:hover{
+    background-color: rgba(0, 0, 0, 0.132);
+}
+
+#profile_picture{
+    margin: 0 1rem;
+    padding: 0;
+}
+
+#profile_picture:hover{
+    background-color: rgba(0, 0, 0, 0.11);
+}
+
+header .header .right_side nav .main-list > li{
+    position: relative;
+    display: inline-block;
+}
+header .header .right_side nav .main-list > li ul{
+    position: absolute;
+    display: none;
+    top: bottom;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+header .header .right_side nav .main-list > li:hover ul{
+    display: block;
+}
+
+header .header .right_side nav .main-list ul{
+    border: 1px outset outset;
+    min-width: 360px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+
+header .header .right_side nav .main-list .sublist a div{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    min-width: 200px;
+    min-height: 3rem;
+    font-size: 1.25rem;
+}
+
+header .header .right_side nav .main-list .sublist:last-child{
+    display: block;
+    border-top : 1px groove grey;
+}
+header .header .right_side nav .main-list .sublist:hover{
+    background-color: darkgray;
+}
+
+
+#profile_ul, #notification_info_ul{
+    right:0;
+}
+
+header .header .right_side nav .main-list .notification-list .notification_info{
+    min-width: 30rem;
+}
+
+header .header .right_side nav .main-list .notification-list .notification_info .profile{
+    display: grid;
+    grid-template-columns: 2fr 6fr 1fr;
+    font-size: 1.5rem;
+}
+
+#notification-header{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    font-size: 1.75rem;
+}
+
+#profile_ul{
+    min-width: 20rem;
+}
+
+#profile_ul li{
+    display: grid;
+    grid-template-columns: 1fr 4fr ;
+    font-size: 1.5rem;
+}
